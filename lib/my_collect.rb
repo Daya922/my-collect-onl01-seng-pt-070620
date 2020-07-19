@@ -4,7 +4,10 @@ def my_collect(array)
   name_collection = []
   while i < array.lenght
   name_collection.push yield(array[i])
+i+=1 
 
 
 end
-end
+name_collection
+end 
+my_collect(list) {|i| i.split(" ").first}
